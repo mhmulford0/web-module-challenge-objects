@@ -30,6 +30,21 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+const discountBurger = {
+  price: 4.99,
+
+  discount: (role) => {
+    if (role === "teacher" || role === "student") {
+      return discountBurger.price * 0.80
+    }
+    else {
+      return discountBurger.price * 0.90
+    }
+  }
+}
+
+console.log(discountBurger.discount("person"))
+
 
 
 ///////////////Reviews (MVP)///////////////////
